@@ -1,0 +1,10 @@
+services:
+ cr2tojpeg:
+   build:
+     context: .
+     dockerfile: Dockerfile
+   volumes:
+     - ./inputs/:/code/inputs
+     - ./outputs/:/code/outputs
+     - ./src/:/code/src
+   working_dir: /code
